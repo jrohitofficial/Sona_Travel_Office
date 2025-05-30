@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary-blue: #0a639d;
+    --color-primary-orange: #ff8f1f;
+    --color-primary-dark: #07456e;
+    
+    /* Secondary Colors */
+    --color-secondary-gray: #5f5f5f;
+    --color-secondary-dark-gray: #3d3d3d;
+    --color-secondary-light-gray: #8f8f8f;
+    --color-secondary-extra-light-gray: #ececec;
+    
+    /* Accent Colors */
+    --color-accent-orange: #b36416;
+    --color-accent-light-orange: #fff4e9;
+    
+    /* Background Colors */
+    --color-background-light: #f5f5f5;
+    --color-background-white: #ffffff;
+    
+    /* Text Colors */
+    --color-text-dark: #3d3d3d;
+    --color-text-gray: #5f5f5f;
+    --color-text-light-gray: #b0b0b0;
+    --color-text-placeholder: #d9d9d9;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0a639d] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#085283] transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#ececec] text-[#5f5f5f] font-bold py-3 px-6 rounded-xl hover:bg-[#e0e0e0] transition-colors;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-[#f5f5f5] rounded-xl text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-[#0a639d];
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-[#3d3d3d] mb-6;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-[#5f5f5f] mb-8;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
